@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama"
+        android:text="Waktu"
         />
 
     <EditText
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Kampus"
+        android:text="Tulis disini"
         android:id="@+id/judulkampus"
         android:layout_below="@+id/nama"
         />
@@ -47,6 +47,14 @@
         android:id="@+id/btn_simpan"
         android:layout_below="@+id/kampus"
         android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/btn_kembali"
+        android:layout_below="@+id/btn_simpan"
         />
 
 

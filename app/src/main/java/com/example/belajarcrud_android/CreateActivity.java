@@ -2,6 +2,7 @@ package com.example.belajarcrud_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 public class CreateActivity extends AppCompatActivity {
 
     Database database;
-    Button btn_simpan;
+    Button btn_simpan, btn_kembali;
     EditText nama, kampus;
     protected Cursor cursor;
 
@@ -26,6 +27,14 @@ public class CreateActivity extends AppCompatActivity {
         nama = findViewById(R.id.nama);
         kampus = findViewById(R.id.kampus);
         btn_simpan = findViewById(R.id.btn_simpan);
+        btn_kembali = findViewById(R.id.btn_kembali);
+
+        btn_kembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CreateActivity.this, MainActivity.class));
+            }
+        });
 
         //button simpan
         btn_simpan.setOnClickListener(new View.OnClickListener() {
